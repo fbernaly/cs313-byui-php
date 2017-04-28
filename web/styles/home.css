@@ -1,0 +1,53 @@
+#right_side {
+    float: left;
+    width: 200px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#right_side p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+}
+
+#right_side blockquote {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer#quote {
+    font-family: Tahoma, serif;
+    font-size: 10px;
+    font-style: normal;
+}
+
+#right_side a:hover {
+    color: MediumTurquoise;
+}
+
+
+/*  override style for #content  */
+
+#content {
+    float: left;
+}
+
+@media screen and (max-width: 800px) {
+    #content,
+    #right_side {
+        float: none;
+        margin: auto;
+    }
+    footer#page {
+        margin: 10px auto;
+    }
+}
