@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: MintCream;
+}
+
+body {
+    margin-top: 25px;
+    background: black;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-left: 70px;
+}
+
+header p {
+    text-indent: 20px;
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 70px;
+}
+
+img#logo {
+    float: left;
+    margin: -70px 20px;
+    width: 40px;
+    height: 70px;
+    border: 3px solid MediumTurquoise;
+    border-radius: 10px;
+}
+
+.l1 {
+    color: #ff005d;
+}
+
+.l2 {
+    color: #35ff99;
+}
+
+.l3 {
+    color: #008597;
+}
+
+.l4 {
+    color: #ffcc00;
+}
+
+.l5 {
+    color: #87CEEB;
+}
+
+.l6 {
+    color: #ff7c35;
+}
+
+.l7 {
+    color: #BA55D3;
+}
+
+.l8 {
+    color: #9ACD32;
+}
+
+.l9 {
+    color: ghostwhite;
+}
+
+h1 {
+    font: 2.5em Georgia, serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-left: 20px;
+}
+
+nav {
+    margin: 30px auto 0px;
+    background-color: #333;
+}
+
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    font: 15px Arial, Helvetica, sans-serif;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.topnav li a {
+    display: block;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+ul.topnav li img {
+    width: 30px;
+    margin: -10px 10px
+}
+
+ul.topnav li {
+    border-right: 1px solid #bbb;
+}
+
+ul.topnav li:first-child,
+ul.topnav li:last-child {
+    border-right: none;
+}
+
+ul.topnav li a:hover:not(.active, .landmark) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: MintCream;
+    color: #333;
+}
+
+ul.topnav li a.landmark {
+    background-color: MediumTurquoise;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+    }
+}
+
+#content {
+    max-width: 660px;
+    margin: auto;
+    padding: 30px;
+}
+
+h2,
+h3,
+h4 {
+    color: MediumTurquoise;
+    margin: 30px auto;
+}
+
+#content img {
+    display: block;
+    margin: 30px auto 50px;
+    width: 400px;
+    height: 400px;
+}
+
+#content p,
+#content ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+#content ul {
+    text-indent: inherit;
+    margin-left: 50px;
+}
+
+#content li {
+    margin-left: 20px;
+}
+
+#content li p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#content a {
+    color: mediumturquoise;
+}
+
+footer#page {
+    clear: both;
+    display: block;
+    margin: auto;
+    padding: 200px 20px 50px;
+}
