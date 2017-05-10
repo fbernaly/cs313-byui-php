@@ -11,9 +11,9 @@ CREATE TABLE public.user (
     email   		varchar(40) NOT NULL UNIQUE
 );
 
-DROP TABLE IF EXISTS public.author;
+DROP TABLE IF EXISTS public.speaker;
 
-CREATE TABLE public.author (
+CREATE TABLE public.speaker (
     id     			SERIAL NOT NULL PRIMARY KEY,
     firstName    	varchar(40) NOT NULL,
     lastName    	varchar(40) NOT NULL
@@ -45,7 +45,7 @@ CREATE TABLE public.session (
 
 CREATE TABLE public.talk (
     id     			SERIAL NOT NULL PRIMARY KEY,
-    author_id       integer NOT NULL REFERENCES public.author(id),
+    speaker_id      integer NOT NULL REFERENCES public.speaker(id),
     session_id   	integer NOT NULL REFERENCES public.session(id),
     name   			text NOT NULL
 );
