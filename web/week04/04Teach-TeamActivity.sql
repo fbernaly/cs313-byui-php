@@ -11,6 +11,14 @@ CREATE TABLE public.user (
     email   		varchar(40) NOT NULL UNIQUE
 );
 
+DROP TABLE IF EXISTS public.author;
+
+CREATE TABLE public.author (
+    id     			SERIAL NOT NULL PRIMARY KEY,
+    firstName    	varchar(40) NOT NULL,
+    lastName    	varchar(40) NOT NULL
+);
+
 DROP TABLE IF EXISTS public.session;
 
 DROP TABLE IF EXISTS public.month;
@@ -37,13 +45,14 @@ CREATE TABLE public.session (
 
 CREATE TABLE public.talk (
     id     			SERIAL NOT NULL PRIMARY KEY,
-    user_id   		integer NOT NULL REFERENCES public.user(id),
+    author_id       integer NOT NULL REFERENCES public.author(id),
     session_id   	integer NOT NULL REFERENCES public.session(id),
     name   			text NOT NULL
 );
 
 CREATE TABLE public.note (
     id     			SERIAL NOT NULL PRIMARY KEY,
+    user_id         integer NOT NULL REFERENCES public.user(id),
     talk_id   		integer NOT NULL REFERENCES public.talk(id),
     note   			text NOT NULL
 );
